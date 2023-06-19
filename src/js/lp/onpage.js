@@ -1,7 +1,7 @@
 $(function () {
     $(".kompl .items .item").click(function () {
         let img = $(this).attr("data-img");
-        $(".kompl .row1 img").attr("src", img + "?v=2");
+        $(this).closest('.kompl').find(".row1 img").attr("src", img + "?v=2");
         return;
     });
 });
