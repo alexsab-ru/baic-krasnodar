@@ -1,26 +1,3 @@
-
-// .slick-prev,
-// .slick-next {
-//     background: url("/img/slick_left.png") center center no-repeat !important;
-//     width: 50px;
-//     height: 50px;
-//     z-index: 5;
-// }
-
-// .slick-prev:before,
-// .slick-next:before {
-//     display: none;
-// }
-
-// .slick-prev {
-//     left: 15px;
-// }
-
-// .slick-next {
-//     right: 15px;
-//     transform: scale(-1, 1);
-// }
-
 h2 {
     font-size: 53px;
     line-height: 100%;
@@ -28,104 +5,6 @@ h2 {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 21px;
-}
-
-h2 b {
-}
-
-
-header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    top: 20px;
-    left: 0;
-    width: 100%;
-}
-
-header .container {
-}
-
-header .bg {
-    background: #dcdcdc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 0 20px;
-}
-
-header .logo_wrap {
-    display: flex;
-}
-
-header .logo_wrap .logo {
-    padding-right: 16px;
-    margin-right: 16px;
-}
-
-header .logo_wrap .logo img {
-    max-height: 40px;
-}
-
-header .logo_wrap .logo:nth-child(1 ) {
-    border-right: 1px solid #628788;
-    align-items: center;
-    display: flex;
-    // padding: 20px 0;
-}
-
-header .top_addr {
-}
-
-header .top_dealer {
-    font-size: 24px;
-    align-items: center;
-    display: flex;
-}
-
-header .top_phone {
-    white-space: nowrap;
-}
-
-header a {
-}
-
-header a:before {
-    content: '';
-}
-
-header a:after {
-    content: '';
-}
-
-header a:hover {
-}
-
-header .top_phone:before {
-    content: '';
-}
-
-header .top_phone:after {
-    content: '';
-}
-
-header .top_phone:hover {
-}
-
-header .button.black {
-    margin-left: 10px;
-}
-
-header .button.black:before {
-    content: '';
-}
-
-header .button.black:after {
-    content: '';
-}
-
-header .button.black:hover {
 }
 
 .b1 {
@@ -258,9 +137,9 @@ header .button.black:hover {
     display: block;
 }
 
-.car .container.x90Plus:before {
+.car .container.x35:before {
     content: "";
-    background: url("/img/x90Plus/x90plus.png") 80% top no-repeat;
+    background: url("/img/x35/x35.png") 80% top no-repeat;
     background-size: 90%;
     padding-top: 141px;
     filter: invert(1);

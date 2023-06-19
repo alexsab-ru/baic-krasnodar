@@ -20,7 +20,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -46,15 +46,17 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/93990487" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<header>
+<header class="fixed w-full top-0 left-0 bg-gray-200/90 z-30">
     <div class="container">
-        <div class="bg">
-            <div class="logo_wrap">
-                <div class="logo"><img src="img/logo.png"></div>
-	            <div class="top_dealer">АВТОХОЛДИНГ</div>
+        <div class="flex items-center justify-between flex-col md:flex-row py-4">
+            <div class="flex items-center flex-nowrap gap-4">
+                <div class="pr-4 border-r border-r-[#628788]">
+                    <img src="img/logo.png" class="max-h-10" alt="Baic">
+                </div>
+	            <div class="sm:text-2xl leading-none uppercase">Автохолдинг</div>
             </div>
-            <div class="top_addr">г. Краснодар, Тургеневское шоссе, 20 Д</div>
-            <a href="tel:+78612970120" class="top_phone">+7 (861) 297-01-20</a>
+            <div class="top_addr font-medium">г. Краснодар, Тургеневское шоссе, 20 Д</div>
+            <a href="tel:+78612970120" class="top_phone font-bold text-lg hidden md:block">+7 (861) 297-01-20</a>
 
             <a class="popup button black" href="#form_popup" data-title="Заказать звонок" data-comment=""
                data-form_name="callback" data-form_type_model_name="" data-form_diler="">
@@ -179,6 +181,105 @@
                        &quot;char&quot;: &quot;&quot;
                    }" data-img="./img/u5-plus/4.png">
                     <img loading="lazy" class="lazyload" data-src="./img/u5-plus/4.png" src="./img/u5-plus/4.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- X35 -->
+<div class="car">
+    <div class="container x35">
+
+        <div class="wrap">
+            <div class="row1">
+                <div class="col1">
+                    <div class="text">Колесная база: <b>2670 мм</b></div>
+                    <div class="text">Длина: <b>4660 мм</b></div>
+                    <div class="text">Ширина: <b>1820 мм</b></div>
+                </div>
+                <img src="./img/x35/2.png" style="transform: scaleX(-1);">
+                <a class="popup compl" href="#form_popup" data-title="Подобрать комплектацию" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Подобрать комплектацию
+                </a>
+            </div>
+
+            <div class="row2">
+                <!--
+                <a class="popup" href="#form_popup" data-title="Стоимость от # ### ### ₽*" data-comment=""
+                   data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Стоимость от # ### ### ₽*
+                </a>
+                 -->
+                <a class="popup" href="#form_popup" data-title="Выгодный трейд-ин" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Выгодный трейд-ин
+                </a>
+                <a class="popup" href="#form_popup" data-title="Выгодный кредит" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Выгодный кредит
+                </a>
+            </div>
+
+
+            <div class="buttons">
+                <a class="popup button white" href="#form_popup" data-title="Узнать цену" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Узнать цену
+                </a>
+                <a class="popup button black" href="#form_popup" data-title="Рассчитать кредит" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Рассчитать кредит
+                </a>
+                <a class="popup button gray" href="#form_popup" data-title="Записаться на тест-драйв" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Записаться на тест-драйв
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="kompl">
+    <div class="container">
+        <h2 class="text-red-500">BAIC <b>X35</b></h2>
+        <div class="row1">
+            <img src="./img/x35/4.png?v=2">
+            <div class="text">
+                <div>Объем двигателя (л.) <b>1,5</b></div>
+                <div>Крутящий момент (H.м) <b>142</b></div>
+                <div>Тип привода <b>Передний</b></div>
+            </div>
+            <div class="buttons">
+                <a class="popup button black" href="#form_popup" data-title="Узнать цену по акции" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Узнать цену по акции
+                </a>
+                <a class="popup button white" href="#form_popup" data-title="Рассчитать кредит" data-comment="" data-form_name="callback" data-form_type_model_name="" data-form_diler="">
+                    Рассчитать кредит
+                </a>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="items">
+                <a href="javascript: ;" class="item" data-attr="{
+                       &quot;img&quot;: &quot;./img/x35/1.png&quot;,
+                       &quot;char&quot;: &quot;&quot;
+                   }" data-img="./img/x35/1.png">
+                    <img loading="lazy" class="lazyload" data-src="./img/x35/1.png" src="./img/x35/1.png">
+                </a>
+                <a href="javascript: ;" class="item" data-attr="{
+                       &quot;img&quot;: &quot;./img/x35/2.png&quot;,
+                       &quot;char&quot;: &quot;&quot;
+                   }" data-img="./img/x35/2.png">
+                    <img loading="lazy" class="lazyload" data-src="./img/x35/2.png" src="./img/x35/2.png">
+                </a>
+                <a href="javascript: ;" class="item" data-attr="{
+                       &quot;img&quot;: &quot;./img/x35/3.png&quot;,
+                       &quot;char&quot;: &quot;&quot;
+                   }" data-img="./img/x35/3.png">
+                    <img loading="lazy" class="lazyload" data-src="./img/x35/3.png" src="./img/x35/3.png">
+                </a>
+                <a href="javascript: ;" class="item" data-attr="{
+                       &quot;img&quot;: &quot;./img/x35/4.png&quot;,
+                       &quot;char&quot;: &quot;&quot;
+                   }" data-img="./img/x35/4.png">
+                    <img loading="lazy" class="lazyload" data-src="./img/x35/4.png" src="./img/x35/4.png">
                 </a>
             </div>
         </div>
