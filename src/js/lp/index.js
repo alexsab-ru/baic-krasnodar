@@ -163,7 +163,7 @@ $(document).on("click",".popup",function(){
 	return false;
 });
 
-_init_inputmask();
+initForm()
 
 function _init_inputmask()
 {
