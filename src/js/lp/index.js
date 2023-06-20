@@ -163,6 +163,8 @@ $(document).on("click",".popup",function(){
 	return false;
 });
 
+_init_inputmask();
+
 function _init_inputmask()
 {
 	$("input[name=phone]").inputmask("8(999) 999-99-99",_option);

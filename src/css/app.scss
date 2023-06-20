@@ -35,7 +35,7 @@
 }
 
 .btn{
-    @apply px-14 border border-red py-3 bg-red text-white text-center font-medium transition-all duration-300 hover:opacity-80;
+    @apply px-8 sm:px-14 border border-red py-3 bg-red text-white text-center font-medium transition-all duration-300 hover:opacity-80;
     &.btn-o{
         @apply bg-transparent text-red hover:opacity-100 hover:bg-red hover:text-white;
     }
