@@ -16,6 +16,12 @@
     &[data-color="red"]{
         @apply bg-red; 
     }
+    &[data-color="blue"]{
+        @apply bg-[#1C61D0]; 
+    }
+    &[data-color="bronze"]{
+        @apply bg-[#480808]; 
+    }
     &.active::after{
         border: 2px solid #aaa;
         border-radius: 50%;
