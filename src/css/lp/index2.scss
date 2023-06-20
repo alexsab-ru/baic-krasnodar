@@ -148,6 +148,8 @@ h2 {
 .car .wrap {
     /*background:#1e1e1e;*/
     background: #1e1e1e url("/img/car_wrap.png") right -300px top no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
 .car .row1 {

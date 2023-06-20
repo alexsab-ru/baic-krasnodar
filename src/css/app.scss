@@ -2,9 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-// .main-container{
-//     @apply container;
-// }
+.color-link{
+    @apply relative block w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 rounded-full shadow-sm shadow-[#eee];
+    &[data-color="gray"]{
+       @apply bg-gray-400;
+    }
+    &[data-color="white"]{
+        @apply bg-gray-200; 
+    }
+    &[data-color="black"]{
+        @apply bg-black; 
+    }
+    &[data-color="red"]{
+        @apply bg-red; 
+    }
+    &.active::after{
+        border: 2px solid #aaa;
+        border-radius: 50%;
+        bottom: -7px;
+        content: "";
+        left: -7px;
+        position: absolute;
+        right: -7px;
+        top: -7px;
+    }
+}
 
 @import "lp/index.scss";
 @import "lp/index2.scss";
