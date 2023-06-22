@@ -19,11 +19,6 @@
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			crossorigin="anonymous"
 		></script>
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"
-		></script>
 
 		<link href="/assets/css/slick/slick.css" rel="stylesheet" />
 		<link href="/assets/css/slick/slick-theme.css" rel="stylesheet" />
@@ -602,7 +597,7 @@
 		>
 			<div class="container">
 				<div class="w-wull xl:w-1/2 text-base sm:text-xl !leading-normal">
-					<h2 class="text-xl sm:text-4xl font-medium">
+					<h2 class="text-xl sm:text-4xl font-medium mb-4">
 						Улучшим предложение конкурентов!
 					</h2>
 					<p>У Вас уже есть предложение от другого дилера?</p>
@@ -758,14 +753,14 @@
 			</div>
 		</section>
 
-		<footer>
+		<footer class="bg-black text-white py-8">
 			<div class="container">
-				<div class="row">
-					<a class="disclamer_switch switch" href="#" target="_blank"
+				<div class="flex justify-center">
+					<a class="disclamer_switch switch text-white underline transition hover:no-underline" href="#" target="_blank"
 						>Подробные условия акций</a
 					>
 				</div>
-				<div class="disclamer">
+				<div class="disclamer text-xs hidden">
 					<p>
 						* Данный сайт не является публичной офертой. Подробные условия уточняйте в
 						отделе продаж.
@@ -776,7 +771,7 @@
 
 		<div id="form_popup">
 			<form
-				class="CKiForm popup_container"
+				class="CKiForm popup_container max-w-md w-full pt-2 px-4 sm:px-10 overflow-hidden relative bg-gray-100 text-center"
 				data-callkeeper_name=""
 				data-flash-title=""
 			>
@@ -786,7 +781,7 @@
 				<input name="form_type_model_name" type="hidden" value="" />
 				<input name="form_diler" type="hidden" value="" />
 
-				<h2 class="form_title">Заголовок</h2>
+				<h2 class="form_title text-xl font-bold my-7 text-center uppercase">Заголовок</h2>
 				<div class="form-group">
 					<input
 						type="tel"

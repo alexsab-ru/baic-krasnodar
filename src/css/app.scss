@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "lp/index.scss";
+
 .color-link{
     @apply relative block w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 rounded-full shadow-sm shadow-[#eee];
     &[data-color="gray"]{
@@ -58,13 +60,3 @@
         }
     }
 }
-
-@import "lp/index.scss";
-@import "lp/index2.scss";
-@import "lp/media.scss";
-
-// color: #1b3252
-// color: #dcdcdc
-// color: #628788
-// color: #76a398
-// color: #ff874a
