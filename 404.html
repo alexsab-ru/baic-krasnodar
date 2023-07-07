@@ -38,33 +38,20 @@
 		/>
 
 		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
-			(function (m, e, t, r, i, k, a) {
-				m[i] =
-					m[i] ||
-					function () {
-						(m[i].a = m[i].a || []).push(arguments);
-					};
-				m[i].l = 1 * new Date();
-				for (var j = 0; j < document.scripts.length; j++) {
-					if (document.scripts[j].src === r) {
-						return;
-					}
-				}
-				(k = e.createElement(t)),
-					(a = e.getElementsByTagName(t)[0]),
-					(k.async = 1),
-					(k.src = r),
-					a.parentNode.insertBefore(k, a);
-			})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-			if (location.host == "baic-krasnodar.ru") {
-				ym(93990487, "init", {
-					clickmap: true,
-					trackLinks: true,
-					accurateTrackBounce: true,
-					webvisor: true,
-				});
-			}
+		<script type="text/javascript" >
+		if (location.host == "baic-krasnodar.ru") {
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();
+		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		ym(93990487, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+		}
 		</script>
 		<!-- /Yandex.Metrika counter -->
 		<script type="module" crossorigin src="./assets/main-ab246cc4.js"></script>
@@ -73,14 +60,7 @@
 
 	<body>
 		<!-- Yandex.Metrika counter -->
-		<noscript
-			><div>
-				<img
-					src="https://mc.yandex.ru/watch/93990487"
-					style="position: absolute; left: -9999px"
-					alt=""
-				/></div
-		></noscript>
+		<noscript><div><img src="https://mc.yandex.ru/watch/93990487" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
 
 		<header class="sticky md:fixed w-full top-0 left-0 bg-gray-200/90 z-30">
@@ -89,9 +69,9 @@
 					<div
 						class="flex items-center flex-nowrap justify-center flex-col lg:flex-row gap-1 lg:gap-4"
 					>
-						<div class="lg:pr-4 lg:border-r border-r-[#628788]">
+						<a href="/" class="lg:pr-4 lg:border-r border-r-[#628788]">
 							<img src="img/logo.png" class="max-h-6 sm:max-h-10" alt="Baic" />
-						</div>
+						</a>
 						<div
 							class="text-xs sm:text-xl lg:text-2xl leading-none uppercase tracking-wider lg:tracking-normal"
 						>
