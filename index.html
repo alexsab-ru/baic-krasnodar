@@ -52,8 +52,8 @@
 		}
 		</script>
 		<!-- /Yandex.Metrika counter -->
-		<script type="module" crossorigin src="./assets/main-24b3ed3c.js"></script>
-		<link rel="stylesheet" href="./assets/index-c9bb7308.css">
+		<script type="module" crossorigin src="./assets/main-ab246cc4.js"></script>
+		<link rel="stylesheet" href="./assets/index-adddcf67.css">
 	</head>
 
 	<body>
@@ -106,64 +106,50 @@
 			</div>
 		</header>
 
-		<section class="banner relative pb-[56.25%] max-[400px]:pb-[70%]">
-			<div class="absolute inset-0">
-				<div class="swiper banner-slider h-full text-white">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide banner-slide" data-swiper-autoplay="14000">
-							<div class="absolute inset-0 bg-black/50 z-[1]"></div>
-							<div class="container h-full relative z-[2]">
-								<div class="h-full flex flex-col justify-center">
-									<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Новые автомобили по&nbsp;цене заводов изготовителей!</h2>
-									<p data-swiper-parallax="-40%" class="text-xs sm:text-xl md:text-2xl mt-3 sm:mt-5 mb-4 sm:mb-10">Уже доступны для бронирования в Автохолдинге!</p>
-									<div data-swiper-parallax="-55%">
-										<a
-											class="popup btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
-											href="#form_popup"
-											data-title="Узнать подробнее"
-											data-comment=""
-											data-form_name="callback"
-											data-form_type_model_name=""
-											data-form_diler=""
-										>
-											Узнать подробнее
-										</a>
-									</div>
-								</div>
-							</div>
-							<video
-								autoplay
-								muted
-								loop
-								poster="img/banner.jpg"
-								class="absolute inset-0 h-full w-full object-cover"
-							>
-								<source src="video/banner.mp4" type="video/mp4" />
-							</video>
-						</div>						
-					</div>
-
-					<div class="swiper-pagination banner-pagination"></div>
-
-					<div class="autoplay-progress">
-						<svg viewBox="0 0 48 48">
-							<circle cx="24" cy="24" r="20"></circle>
-						</svg>
-						<span></span>
-					</div>
-
-					<div class="swiper-button-prev banner-button-prev !hidden md:!flex"></div>
-					<div class="swiper-button-next banner-button-next !hidden md:!flex"></div>
-
+		<section class="relative pb-[56.25%]">
+			<div
+				class="flex flex-col items-center justify-center gap-5 sm:gap-10 px-2 top-4 sm:top-[25%] absolute w-full z-20"
+			>
+				<div
+					class="text-lg sm:text-3xl md:text-4xl lg:text-5xl text-white text-center"
+				>
+					<h1 class="uppercase font-bold">
+						Новые автомобили по цене заводов изготовителей!
+					</h1>
+					<span class="text-xs sm:text-xl md:text-2xl"
+						>Уже доступны для бронирования в Автохолдинге!</span
+					>
 				</div>
+				<a
+					class="popup btn white btn-o !py-2 sm:!py-3"
+					href="#form_popup"
+					data-title="Узнать подробнее"
+					data-comment=""
+					data-form_name="callback"
+					data-form_type_model_name=""
+					data-form_diler=""
+				>
+					Узнать подробнее
+				</a>
 			</div>
+			<div class="absolute h-full w-full bg-black/40 z-10"></div>
+			<video
+				autoplay
+				muted
+				loop
+				poster="img/banner.jpg"
+				class="absolute h-full w-full"
+			>
+				<source src="video/banner.mp4" type="video/mp4" />
+			</video>
 		</section>
 
 		<!-- u5 PLUS -->
 
 		<section class="relative pb-20 xl:pb-32 z-[1] model" data-dir="u5-plus">
 			<img
-				src="img/u5-plus/bg.jpg"
+				data-src="img/u5-plus/bg.jpg"
+				loading="lazy"
 				class="absolute w-full h-[420px] object-cover z-[-1]"
 			/>
 			<div
@@ -375,7 +361,8 @@
 
 		<section class="relative pb-20 z-[1] model bg-gray-100" data-dir="x35">
 			<img
-				src="img/x35/bg.jpg"
+				data-src="img/x35/bg.jpg"
+				loading="lazy"
 				class="absolute w-full h-[420px] object-cover z-[-1]"
 			/>
 			<div
@@ -815,7 +802,7 @@
 		></script>
 		
 
-		<!-- <script>
+		<script>
 			if ("loading" in HTMLImageElement.prototype) {
 				const images = document.querySelectorAll('img[loading="lazy"]');
 				images.forEach((img) => {
@@ -828,6 +815,6 @@
 					"https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";
 				document.body.appendChild(script);
 			}
-		</script> -->
+		</script>
 	</body>
 </html>
