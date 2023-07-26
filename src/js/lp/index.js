@@ -60,13 +60,17 @@ $(document).on("click",".popup",function(){
 	} );
 	_init_inputmask();
 	if(!firstInitForm){
-		initForm()
 		firstInitForm = true;
+		initForm()
 	}
 	return false;
 });
 
-initForm()
+// initForm()
+
+$('.CKiForm input[name="phone"]').focus( e => {
+	initForm()
+})
 
 function _init_inputmask()
 {
@@ -205,6 +209,8 @@ function initForm()
 		.always(function() {
 			console.log( "finished" );
 		});
+
+		firstInitForm = true;
 
 		return false;
 	} );
