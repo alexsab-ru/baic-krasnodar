@@ -1,12 +1,15 @@
+const mapId = "map";
+
 function initYandexMap() {
-	if ($("#map1").length > 0) {
+	if (document.getElementById(mapId) != null) {
 		ymaps.ready(function () {
 			var _ball_bg = "./img/map.balloon.png";
 			var _ball_Offset = [-21, -58];
 			var _ball_Size = [43, 62];
-			var myMap = new ymaps.Map("map1",
+			var myMap = new ymaps.Map(
+				mapId,
 				{
-					center: [45.017382, 38.936556],
+					center: [45.0174, 38.9376],
 					zoom: 16,
 					controls: ["zoomControl"],
 				},
@@ -16,7 +19,7 @@ function initYandexMap() {
 			);
 			myMap.behaviors.disable("scrollZoom");
 			var myPlacemark1 = new ymaps.Placemark(
-				[45.017382, 38.937656],
+				[45.0174, 38.9376],
 				{
 					balloonContent: "г. Краснодар, Тургеневское шоссе, 20 Д",
 					hintContent: "г. Краснодар, Тургеневское шоссе, 20 Д",
@@ -62,40 +65,28 @@ function initYandexMapWaitOnHover() {
 	var check_if_load = 0;
 	function __load_yandex() {
 		if (check_if_load == 0) {
-			/*var instance = $.fancybox.open(
-			{
-				animationDuration:0,
-				afterShow: function( instance, current )
-				{
-					//console.info( instance );
-					$(".fancybox-content").remove();
-					instance.showLoading();
-				}
-
-			});*/
 			check_if_load = 1;
-			//animationDuration
 			loadScript(
 				"https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;loadByRequire=1",
 				function () {
-					/*instance.hideLoading();
-				instance.close();*/
 					ymaps.load(initYandexMap);
 				}
 			);
 		}
-	} //end_ func
+	}
 
-	$("#map1").on("touchstart", function () {
-		__load_yandex();
-	});
-	$("#map1").mouseenter(function () {
-		__load_yandex();
-	});
-	$("#map1").click(function () {
-		__load_yandex();
-	});
-} //end_ func
-
+	if (document.getElementById(mapId) != null) {
+		const mapBlock = document.getElementById(mapId);
+		mapBlock.addEventListener("touchstart", function () {
+			__load_yandex();
+		});
+		mapBlock.addEventListener("mouseenter", function () {
+			__load_yandex();
+		});
+		mapBlock.click(function () {
+			__load_yandex();
+		});
+	}
+}
 
 initYandexMapWaitOnHover();

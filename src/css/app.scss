@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "lp/index.scss";
+@import "../../node_modules/@mdi/font/css/materialdesignicons.min.css";
 
-@import "lp/slider";
+@import 'general';
+@import 'ui/slider';
+@import 'ui/color.links';
+@import 'ui/buttons';
+@import 'ui/forms';
+
+// @import "lp/index.scss";
+
+// @import "lp/slider";
 
 .color-link{
     @apply relative block w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 rounded-full shadow-sm shadow-[#eee];
