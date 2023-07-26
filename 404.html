@@ -14,28 +14,8 @@
 			type="image/x-icon"
 			href="./img/favicon.ico"
 		/>
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"
-		></script>
-
-		<link href="./assets/css/slick/slick.css" rel="stylesheet" />
-		<link href="./assets/css/slick/slick-theme.css" rel="stylesheet" />
-		<link
-			href="./assets/css/jquery.fancybox.min.css"
-			rel="stylesheet"
-			type="text/css"
-		/>
 
 		
-
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-			rel="stylesheet"
-		/>
 
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
@@ -54,8 +34,8 @@
 		}
 		</script>
 		<!-- /Yandex.Metrika counter -->
-		<script type="module" crossorigin src="./assets/main-f24d31ae.js"></script>
-		<link rel="stylesheet" href="./assets/index-c9bb7308.css">
+		<script type="module" crossorigin src="./assets/main-0a8c8b3e.js"></script>
+		<link rel="stylesheet" href="./assets/index-80f3bd32.css">
 	</head>
 
 	<body>
@@ -69,11 +49,11 @@
 					<div
 						class="flex items-center flex-nowrap justify-center flex-col lg:flex-row gap-1 lg:gap-4"
 					>
-						<a href="/" class="lg:pr-4 lg:border-r border-r-[#628788]">
+						<div class="lg:pr-4 lg:border-r border-r-[#628788]">
 							<img src="img/logo.png" class="max-h-6 sm:max-h-10" alt="Baic" />
-						</a>
+						</div>
 						<div
-							class="text-xs sm:text-xl lg:text-2xl leading-none uppercase tracking-wider lg:tracking-normal"
+							class="text-xs sm:text-xl lg:text-2xl uppercase tracking-wider lg:tracking-normal"
 						>
 							Автохолдинг
 						</div>
@@ -88,22 +68,13 @@
 					>
 
 					<a
-						class="popup btn flex-shrink-0 px-4 md:px-14 py-2 md:py-3 text-xs md:text-base"
-						href="#form_popup"
+						class="popup-link btn flex-shrink-0 !px-3 md:!px-8 lg:!px-14 !py-2 md:!py-3 text-xs md:text-base"
+						href="#common-modal"
 						data-title="Заказать звонок"
-						data-comment=""
-						data-form_name="callback"
-						data-form_type_model_name=""
-						data-form_diler=""
+						data-form_name="Заказ звонка. Шапка"
 					>
 						Заказать звонок
 					</a>
-
-					<!--div class="m_button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div-->
 				</div>
 			</div>
 		</header>
@@ -224,20 +195,17 @@
 					</div>
 					<h3 class="font-bold sm:text-xl mb-4">Остались вопросы? Мы&nbsp;перезвоним!</h3>
 					<a
-						class="popup btn black max-w-[400px] w-full block"
-						href="#form_popup"
+						class="popup-link btn black max-w-[400px] w-full block"
+						href="#common-modal"
 						data-title="Заказать звонок"
-						data-comment=""
-						data-form_name="callback"
-						data-form_type_model_name=""
-						data-form_diler=""
+						data-form_name="Заказ звонка. Секция Контакты"
 					>
 						Заказать звонок
 					</a>
 				</div>
 				<div
-					id="map1"
-					class="overflow-hidden bg-[url(/img/map_bg.jpg)] bg-cover bg-center static w-full h-[400px] lg:h-full"
+					id="map"
+					class="map overflow-hidden bg-[url(/img/map_bg.jpg)] bg-cover bg-center static w-full h-[400px] lg:h-full"
 				></div>
 			</div>
 		</section>
@@ -258,73 +226,129 @@
 			</div>
 		</footer>
 
-		<div id="form_popup">
-			<form
-				class="CKiForm popup_container max-w-md w-full pt-2 px-4 sm:px-10 overflow-hidden relative bg-gray-100 text-center"
-				data-callkeeper_name=""
-				data-flash-title=""
+		<!-- MODALS -->
+		<div
+			class="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-90 overflow-x-hidden overflow-y-auto hidden modal-overlay z-50"
+			id="common-modal"
+			data-close
+		>
+			<div
+				class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white font-medium text-dark py-8 px-4 sm:p-8"
 			>
-				<input name="title" type="hidden" value="" />
-				<input name="comment" type="hidden" value="" />
-				<input name="form_name" type="hidden" value="" />
-				<input name="form_type_model_name" type="hidden" value="" />
-				<input name="form_diler" type="hidden" value="" />
-
-				<h2 class="form_title text-xl font-bold my-7 text-center uppercase">Заголовок</h2>
-				<div class="form-group">
+				<div
+					class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45"
+					data-close
+				>
+					<svg
+						width="20"
+						height="20"
+						viewBox="0 0 20 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						data-close
+					>
+						<line y1="9.5" x2="20" y2="9.5" stroke="black" data-close />
+						<line x1="9.5" y1="20" x2="9.5" stroke="black" data-close />
+					</svg>
+				</div>
+				<p class="caption text-center text-3xl mb-2 text-gray-800">
+					Обратная связь
+				</p>
+				<p class="text-center mb-10 font-normal text-gray-600">
+					Оставьте свои данные и мы свяжемся с Вами в ближайшее время!
+				</p>
+				<form class="flex flex-col gap-4" id="rating-form">
+					<input type="hidden" name="form" value="" />
 					<input
-						type="tel"
-						name="phone"
-						class="nacc form-control"
-						placeholder="Ваш телефон"
-						data-callkeeper="tel"
-						data-flash="phone"
-						autocomplete="off"
+						type="email"
+						tabindex="-1"
+						name="email"
+						class="h-0 opacity-0 absolute -z-[100]"
+						placeholder="mail@example.com"
 					/>
-				</div>
-				<div class="form-group">
-					<button
-						type="submit"
-						class="form-control CKFormTrigger btn !h-auto text-base FlashFormSubmit"
-					>
-						Получить предложение
-					</button>
-				</div>
-				<label class="agree_field mt-4 !leading-tight !text-[14px] text-left">
-					<input type="checkbox" name="agree" value="1" checked="checked" />
-					Согласие на
-					<a target="_blank" href="#" class="underline hover:no-underline"
-						>обработку персональных данных</a
-					>
-				</label>
-			</form>
+					<div class="w-full">
+						<input
+							type="text"
+							name="name"
+							class="border border-black border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2.5 mb-1.5 outline-none w-full font-normal"
+							placeholder="Ваше имя"
+						/>
+						<div class="error-message text-xs text-red hidden name"></div>
+					</div>
+					<div class="w-full">
+						<input
+							type="tel"
+							name="phone"
+							class="border border-black border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2.5 mb-1.5 outline-none w-full font-normal"
+							placeholder="+7 (999) 999-99-99*"
+						/>
+						<div class="error-message text-xs text-red hidden phone">
+							Веден некорректный номер телефона
+						</div>
+					</div>
+					<label class="cursor-pointer flex items-center flex-wrap">
+						<input
+							type="checkbox"
+							name="agree"
+							class="absolute w-0 h-0 opacity-0 invisible"
+						/>
+						<div class="flex flex-wrap gap-x-2 text-gray-800">
+							<span
+								class="fake-checkbox-black mt-0.5 w-4 h-4 border border-black inline-block flex-shrink-0 transition-all relative"
+							></span>
+							<span>Я согласен на обработку персональных данных</span>
+							<!-- <a
+								href="/privacy-policy.pdf"
+								class="text-black underline transition-all hover:no-underline"
+								target="_blank"
+								>обработку персональных данных</a
+							> -->
+						</div>
+						<div class="error-message text-xs text-red mt-1 w-full hidden agree">
+							Чтобы продолжить, установите флажок
+						</div>
+					</label>
+					<input
+						type="checkbox"
+						name="subscribe"
+						class="absolute w-0 h-0 opacity-0 invisible"
+					/>
+					<input type="submit" class="btn w-full" value="Отправить" />
+				</form>
+			</div>
 		</div>
 
-		<script
-			type="text/javascript"
-			src="./assets/js/jquery.fancybox.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="./assets/js/jquery.inputmask.bundle.min.js?v=848931"
-			charset="UTF-8"
-		></script>
-		
-		<script type="text/javascript" src="./assets/js/slick/slick.min.js"></script>
+		<div
+			class="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-90 z-50 overflow-x-hidden overflow-y-auto hidden modal-overlay"
+			id="message-modal"
+			data-close
+		>
+			<div
+				class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white text-gray-800 py-8 px-4 sm:p-8"
+			>
+				<div
+					class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45"
+					data-close
+				>
+					<svg
+						width="20"
+						height="20"
+						viewBox="0 0 20 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						data-close
+					>
+						<line y1="9.5" x2="20" y2="9.5" stroke="black" data-close />
+						<line x1="9.5" y1="20" x2="9.5" stroke="black" data-close />
+					</svg>
+				</div>
+				<div class="w-20 h-20 mx-auto mb-10" id="icon"></div>
+				<p class="text-center text-lg mb-10"></p>
+			</div>
+		</div>
 
-		<script>
-			if ("loading" in HTMLImageElement.prototype) {
-				const images = document.querySelectorAll('img[loading="lazy"]');
-				images.forEach((img) => {
-					img.src = img.dataset.src;
-				});
-			} else {
-				// Dynamically import the LazySizes library
-				const script = document.createElement("script");
-				script.src =
-					"https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";
-				document.body.appendChild(script);
-			}
-		</script>
+		<!-- END MODALS -->
+		
+
 	</body>
 </html>
