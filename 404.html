@@ -34,8 +34,8 @@
 		}
 		</script>
 		<!-- /Yandex.Metrika counter -->
-		<script type="module" crossorigin src="./assets/main-6e6e4258.js"></script>
-		<link rel="stylesheet" href="./assets/index-9f2c3be0.css">
+		<script type="module" crossorigin src="./assets/main-9d50d02a.js"></script>
+		<link rel="stylesheet" href="./assets/index-1a5f5934.css">
 	</head>
 
 	<body>
@@ -50,7 +50,7 @@
 						class="flex items-center flex-nowrap justify-center max-[480px]:flex-row flex-col lg:flex-row gap-1 lg:gap-4"
 					>
 						<div class="lg:pr-4 lg:border-r border-r-[#628788]">
-							<img src="img/logo.png" class="max-h-6 sm:max-h-10" alt="Baic" />
+							<img src="./img/logo.png" class="max-h-6 sm:max-h-10" alt="Baic" />
 						</div>
 						<div
 							class="text-xs sm:text-xl lg:text-2xl uppercase tracking-wider lg:tracking-normal"
@@ -103,7 +103,7 @@
 				</a>
 			</div>
 			<img
-				src="img/404.jpg"
+				src="./img/404.jpg"
 				class="absolute top-1/2 right-1/2 translate-x-2/4"
 				alt="not found"
 			/>
@@ -121,7 +121,7 @@
 						class="flex items-center flex-nowrap flex-col sm:flex-row gap-1 sm:gap-4 mb-6"
 					>
 						<div class="sm:pr-4 sm:border-r border-r-[#628788]">
-							<img src="img/logo.png" class="max-h-10" alt="Baic" />
+							<img src="./img/logo.png" class="max-h-10" alt="Baic" />
 						</div>
 						<div
 							class="text-xl sm:text-2xl leading-none uppercase tracking-wider sm:tracking-normal"
@@ -217,14 +217,13 @@
 						>Подробные условия акций</a
 					>
 				</div>
-				<div class="disclamer text-xs hidden">
-					<p>
-						* Данный сайт не является публичной офертой. Подробные условия уточняйте в
-						отделе продаж.
-					</p>
+				<div class="disclamer text-sm hidden">
+					<p class="my-10"><sup>*</sup> Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости автомобилей, пожалуйста, обращайтесь к менеджерам автосалона.</p>
 				</div>
 			</div>
 		</footer>
+
+		<div class="btn-up btn-up_hide"></div>
 
 		<!-- MODALS -->
 		<div
@@ -347,7 +346,13 @@
 			</div>
 		</div>
 
+		<div class="hidden cookie_notice fixed bottom-4 left-4 rounded-md bg-white p-6 flex flex-col sm:flex-row items-start justify-between space-y-6 sm:space-y-0 sm:space-x-6 w-[540px] max-w-[calc(100%-2rem)] z-50 font-light text-sm shadow-2xl">
+			<div>Мы используем файлы Cookie, чтобы сделать ваше пребывание на сайте более комфортным</div>
+			<!-- <div>Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.</div> -->
+			<a class="rounded-sm cursor-pointer disabled:cursor-not-allowed aria-disabled:cursor-not-allowed text-center bg-black hover:bg-gray text-white disabled:bg-gray/50 aria-disabled:bg-gray/50 py-3 px-6 focus:border-main outline-0 focus:shadow-input" id="cookie_close" href="#close">Хорошо</a>
+		</div>
 		<!-- END MODALS -->
+
 		
 
 	</body>
