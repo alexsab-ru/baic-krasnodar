@@ -173,9 +173,87 @@
 			</div>
 		</section>
 
+		<section class="models py-10 sm:py-20">
+			<div class="container">
+				<h2 class="text-center font-medium text-3xl sm:text-4xl mb-8 sm:mb-14">Модельный ряд</h2>
+
+				<div class="grid max-[569px]:grid-cols-1 grid-cols-2 lg:grid-cols-3 gap-5 text-xs 2xl:text-base">
+
+					<a href="#u5-plus" class="flex flex-col border pt-6 sm:pt-10 pb-4 px-4 sm:px-5 overflow-hidden shadow-xl transition-all duration-500 in-expo group hover:border-gray-400 hover:shadow-md">
+						<div>
+							<span class="text-4xl sm:text-6xl uppercase font-bold transition-colors duration-500 group-hover:text-accent">U<span class="text-accent transition-colors duration-500 group-hover:text-black">5</span> Plus</span>
+						</div>
+						<div class="flex-grow flex items-center justify-center">
+							<img src="/img/u5-plus/black.png" class="scale-100 transition-transform duration-500 in-expo group-hover:scale-110" alt="u5 plus">
+						</div>
+						<div class="flex mt-10 divide-x">
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-seats.png" />
+								<span>5 мест</span>
+							</div>
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-petrol.png" />
+								<span>Бензин</span>
+							</div>
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-auto.png" />
+								<span>5MT</span>
+							</div>
+						</div>
+					</a>
+					<a href="#x35" class="flex flex-col border pt-6 sm:pt-10 pb-4 px-4 sm:px-5 overflow-hidden shadow-xl transition-all duration-500 in-expo group hover:border-gray-400 hover:shadow-md">
+						<div>
+							<span class="block text-4xl sm:text-6xl uppercase font-bold transition-colors duration-500 group-hover:text-accent">x<span class="text-accent transition-colors duration-500 group-hover:text-black">35</span></span>
+						</div>
+						<div class="flex-grow flex items-center justify-center">
+							<img src="/img/x35/blue.png" class="scale-100 transition-transform duration-500 in-expo group-hover:scale-110" alt="gs8-2">
+						</div>
+						<div class="flex mt-10 divide-x">
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-seats.png" />
+								<span>5 мест</span>
+							</div>
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-petrol.png" />
+								<span>Бензин</span>
+							</div>
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-auto.png" />
+								<span>CVT</span>
+							</div>
+						</div>
+					</a>
+					<a href="#bj40" class="flex flex-col border pt-6 sm:pt-10 pb-4 px-4 sm:px-5 overflow-hidden shadow-xl transition-all duration-500 in-expo group hover:border-gray-400 hover:shadow-md">
+						<div>
+							<span class="block text-4xl sm:text-6xl uppercase font-bold transition-colors duration-500 group-hover:text-accent">BJ<span class="text-accent transition-colors duration-500 group-hover:text-black">40</span></span>
+						</div>
+						<div class="flex-grow flex items-center justify-center">
+							<img src="/img/bj40/green.png" class="scale-100 transition-transform duration-500 in-expo group-hover:scale-110" alt="BJ40">
+						</div>
+						<div class="flex mt-10 divide-x">
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-seats.png" />
+								<span>5 мест</span>
+							</div>
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-petrol.png" />
+								<span>Бензин</span>
+							</div>
+							<div class="flex-1 p-4 flex flex-col items-center gap-2">
+								<img src="/img/icons/icon-auto.png" />
+								<span>8AT</span>
+							</div>
+						</div>
+					</a>
+
+				</div>
+
+			</div>
+		</section>
+
 		<!-- u5 PLUS -->
 
-		<section class="relative pb-20 xl:pb-32 z-[1] model" data-dir="u5-plus">
+		<section class="relative pb-20 xl:pb-32 z-[1] model" data-dir="u5-plus" id="u5-plus">
 			<img
 				src="/img/u5-plus/bg.jpg"
 				class="absolute w-full h-[420px] object-cover z-[-1]"
@@ -381,7 +459,7 @@
 
 		<!-- X35 -->
 
-		<section class="relative pb-20 z-[1] model bg-gray-100" data-dir="x35">
+		<section class="relative pb-20 z-[1] model bg-gray-100" data-dir="x35" id="x35">
 			<img
 				src="/img/x35/bg.jpg"
 				class="absolute w-full h-[420px] object-cover z-[-1]"
@@ -589,7 +667,7 @@
 
 		<!-- BJ40 -->
 
-		<section class="relative pb-20 z-[1] model bg-gray-100" data-dir="bj40">
+		<section class="relative pb-20 z-[1] model bg-gray-100" data-dir="bj40" id="bj40">
 			<img
 				src="/img/bj40/bg.jpg"
 				class="absolute w-full h-[420px] object-cover z-[-1]"
@@ -650,9 +728,7 @@
 					<div>
 						<h2 class="text-2xl sm:text-5xl text-white tracking-widest">
 							BAIC
-							<b
-								class="font-bold text-black tracking-normal text-5xl sm:text-8xl uppercase"
-								>BJ40</b
+							<b class="font-bold text-accent tracking-normal text-5xl sm:text-8xl uppercase">BJ40</b
 							>
 						</h2>
 						<p class="uppercase text-white text-lg sm:text-2xl">
