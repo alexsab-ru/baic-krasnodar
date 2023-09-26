@@ -24,6 +24,9 @@
 	&[data-color="bronze"] {
 		@apply bg-[#480808];
 	}
+	&[data-color="green"] {
+		@apply bg-green-700;
+	}
 	&.active::after {
 		border: 2px solid #aaa;
 		border-radius: 50%;

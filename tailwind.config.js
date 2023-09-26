@@ -18,6 +18,7 @@ export const theme = {
     white: colors.white,
     black: colors.black,
     gray: colors.gray,
+    green: colors.green,
   },
   extend: {
     fontFamily: {
