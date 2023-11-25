@@ -77,7 +77,7 @@ import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.min.css';
 
 async function initImagesSlider(url, selector, slider){
-	fetch(url)
+	await fetch(url)
 	.then((res) => res.json())
 	.then((data) => {
 		const allImages = [].concat(...Object.values(data));
@@ -94,8 +94,6 @@ async function initImagesSlider(url, selector, slider){
 		new Swiper(slider, {
 			modules: [Autoplay],
 			loop: true,
-			slidesPerView: 8.5,
-			spaceBetween: 15,
 			centeredSlides: true,
 			speed: 500,
 			autoplay: {
