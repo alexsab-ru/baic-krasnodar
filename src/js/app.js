@@ -1,3 +1,4 @@
+// import './modules/alpine.data';
 import './modules/scroll';
 import './modules/analytics';
 import './modules/slider';

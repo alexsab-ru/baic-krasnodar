@@ -93,3 +93,15 @@
         @apply bg-red;
     }
 }
+
+.image-slide{
+    @apply relative h-full bg-black cursor-zoom-in;
+    &.swiper-slide-active{
+        img{
+            @apply opacity-100;
+        }
+    }
+    img{
+        @apply absolute h-full w-full object-cover object-center inset-0 opacity-40 transition-opacity duration-500 ease-in-out hover:opacity-60;
+    }
+}
