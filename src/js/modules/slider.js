@@ -107,11 +107,11 @@ async function initImagesSlider(url, selector, slider){
 				},
 				640: {
 				  slidesPerView: 5.5,
-				  spaceBetween: 15,
+				  spaceBetween: 10,
 				},
 				1280: {
 				  slidesPerView: 8.5,
-				  spaceBetween: 15,
+				  spaceBetween: 10,
 				}
 			}
 		});
