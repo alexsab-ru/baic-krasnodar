@@ -121,5 +121,7 @@ async function initImagesSlider(url, selector, slider){
 	});
 }
 
+(async function() {
 await initImagesSlider('/data/u5plus.json', '.u5plus-slider .swiper-wrapper', '.u5plus-slider')
 await initImagesSlider('/data/x35.json', '.x35-slider .swiper-wrapper', '.x35-slider')
+})();
