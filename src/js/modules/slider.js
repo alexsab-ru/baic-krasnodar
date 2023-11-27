@@ -102,16 +102,16 @@ async function initImagesSlider(url, selector, slider){
 			},
 			breakpoints: {
 				320: {
-				  slidesPerView: 3.5,
-				  spaceBetween: 5,
+					slidesPerView: 3.5,
+					spaceBetween: 5,
 				},
 				640: {
-				  slidesPerView: 5.5,
-				  spaceBetween: 10,
+					slidesPerView: 5.5,
+					spaceBetween: 10,
 				},
 				1280: {
-				  slidesPerView: 8.5,
-				  spaceBetween: 10,
+					slidesPerView: 8.5,
+					spaceBetween: 10,
 				}
 			}
 		});
