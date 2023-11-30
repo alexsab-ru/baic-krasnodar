@@ -95,22 +95,20 @@ async function initImagesSlider(url, selector, slider){
 			modules: [Autoplay],
 			loop: true,
 			centeredSlides: true,
-			speed: 500,
+			slidesPerView: 'auto',
+			speed: 100,
 			autoplay: {
 				enabled: true,
-				delay: 3000,
+				delay: 5000,
 			},
 			breakpoints: {
 				320: {
-					slidesPerView: 3.5,
 					spaceBetween: 5,
 				},
 				640: {
-					slidesPerView: 5.5,
 					spaceBetween: 10,
 				},
 				1280: {
-					slidesPerView: 8.5,
 					spaceBetween: 10,
 				}
 			}
