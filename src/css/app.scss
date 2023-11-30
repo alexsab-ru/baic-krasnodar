@@ -95,13 +95,13 @@
 }
 
 .image-slide{
-    @apply relative h-full bg-black cursor-zoom-in;
+    @apply relative h-full cursor-zoom-in inline-flex w-auto min-w-[50px];
     &.swiper-slide-active{
         img{
-            @apply opacity-100;
+            @apply brightness-100;
         }
     }
     img{
-        @apply absolute h-full w-full object-cover object-center inset-0 opacity-40 transition-opacity duration-500 ease-in-out hover:opacity-60;
+        @apply relative h-full w-full object-cover object-center inset-0 brightness-50 transition-[filter] duration-500 ease-in-out hover:brightness-110;
     }
 }
