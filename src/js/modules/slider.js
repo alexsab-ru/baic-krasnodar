@@ -99,6 +99,8 @@ async function initImagesSlider(url, selector, slider){
 			speed: 100,
 			autoplay: {
 				enabled: true,
+				disableOnInteraction: false,
+				waitForTransition: false,
 				delay: 5000,
 			},
 			breakpoints: {
